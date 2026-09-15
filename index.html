@@ -3,11 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TecnoFénix — El renacimiento de tu equipo</title>
-<meta name="description" content="Servicio técnico y asesoramiento en Berazategui. Mantenimiento de PC, laptops, celulares y consolas. Le damos una segunda vida a tu equipo.">
+<title>TecnoFenix | Servicio Técnico de PC y Celulares en Berazategui - Tecno fenix</title>
+<meta name="description" content="Descubre en TecnoFenix (Tecno fenix) las mejores soluciones en reparación, mantenimiento y armado de PC, celulares y consolas en Berazategui. ¡Pedí tu turno!">
+<link rel="canonical" href="https://marianitro.github.io/tecnofenix/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="TecnoFenix">
+<meta property="og:title" content="TecnoFenix | Servicio Técnico de PC y Celulares en Berazategui - Tecno fenix">
+<meta property="og:description" content="Descubre en TecnoFenix (Tecno fenix) las mejores soluciones en reparación, mantenimiento y armado de PC, celulares y consolas en Berazategui.">
+<meta property="og:url" content="https://marianitro.github.io/tecnofenix/">
+<meta property="og:image" content="https://marianitro.github.io/tecnofenix/assets/banner.png">
+<meta property="og:locale" content="es_AR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TecnoFenix | Servicio Técnico de PC y Celulares en Berazategui - Tecno fenix">
+<meta name="twitter:description" content="Descubre en TecnoFenix (Tecno fenix) las mejores soluciones en reparación, mantenimiento y armado de PC, celulares y consolas en Berazategui.">
+<meta name="twitter:image" content="https://marianitro.github.io/tecnofenix/assets/banner.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TecnoFenix",
+  "alternateName": ["Tecno fenix", "Tecno Fénix", "TecnoFénix"],
+  "description": "Servicio técnico y asesoramiento para PC, notebooks, celulares y consolas en Berazategui. Mantenimiento, optimización, armado de equipos y recuperación de datos.",
+  "url": "https://marianitro.github.io/tecnofenix/",
+  "logo": "https://marianitro.github.io/tecnofenix/assets/banner.png",
+  "image": "https://marianitro.github.io/tecnofenix/assets/banner.png",
+  "telephone": "+5491122656236",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle 13A N° 3077 (Local 5)",
+    "addressLocality": "Berazategui",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "sameAs": [
+    "https://bit.ly/tecnofenix"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Thursday"],
+      "opens": "10:00",
+      "closes": "14:00",
+      "description": "Atención por orden de llegada, sin turno"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Friday"],
+      "opens": "10:00",
+      "closes": "14:00",
+      "description": "Atención exclusivamente con turno previo"
+    }
+  ]
+}
+</script>
 <style>
   :root{
     --bg-void:#050912;
@@ -236,10 +293,11 @@
     border-top:1px solid var(--line);
     padding:44px 0 26px;
   }
-  .contact-bar{
-    display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:24px;
-    padding-bottom:30px; border-bottom:1px solid var(--line); margin-bottom:20px;
+  .footer-grid{
+    display:grid; grid-template-columns:1fr 1.25fr; gap:36px; align-items:start;
+    padding-bottom:28px; border-bottom:1px solid var(--line); margin-bottom:20px;
   }
+  .footer-info{display:flex; flex-direction:column; gap:16px;}
   .contact-item{display:flex; gap:12px; align-items:flex-start;}
   .contact-item svg{flex:none; width:20px;height:20px; stroke:var(--orange-light); fill:none; stroke-width:1.8; margin-top:2px;}
   .contact-item .label{font-weight:800; font-size:0.95rem;}
@@ -247,19 +305,21 @@
   .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:0.8rem;}
   .foot-bottom .tag{font-style:italic; color:var(--orange-light);}
 
-  .map-embed{
+  .footer-map{
     border-radius:var(--radius);
     overflow:hidden;
     border:1px solid var(--line);
-    margin-bottom:28px;
+    align-self:stretch;
   }
-  .map-embed iframe{width:100%; height:220px; border:0; display:block;}
+  .footer-map iframe{width:100%; height:100%; min-height:230px; border:0; display:block;}
 
-  .f960-row{
-    display:flex; justify-content:flex-end; align-items:center;
-    margin-top:16px; opacity:0.85;
+  .f960-badge{margin-top:4px;}
+  .f960-badge img{width:66px; height:auto; border-radius:9px; display:block;}
+
+  @media (max-width:860px){
+    .footer-grid{grid-template-columns:1fr;}
+    .footer-map iframe{height:220px;}
   }
-  .f960-row img{width:74px; height:auto; display:block;}
 
   @media (max-width:860px){
     nav{display:none;}
@@ -268,7 +328,6 @@
     .detail-row{grid-template-columns:1fr;}
     .hours-grid{grid-template-columns:1fr;}
     .turno-grid{grid-template-columns:1fr;}
-    .contact-bar{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -293,7 +352,7 @@
   <div class="hero-inner">
     <div>
       <div class="hero-eyebrow">Servicio técnico en Berazategui</div>
-      <h1>El renacimiento<br><span class="accent">de tu equipo</span></h1>
+      <h1>TecnoFénix: <span class="accent">el renacimiento de tu equipo</span></h1>
       <p class="lead">Le damos una segunda vida a tu PC, laptop, celular y consolas: mantenimiento, optimización, armado y asesoramiento personalizado.</p>
       <div class="hero-ctas">
         <a class="btn btn-fire" href="#turno">Solicitar turno</a>
@@ -491,38 +550,34 @@
 
 <footer id="contacto">
   <div class="wrap">
-    <div class="map-embed">
-      <iframe src="https://www.google.com/maps?q=Calle+13A+3077,+Berazategui,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación TecnoFénix en el mapa"></iframe>
-    </div>
-    <div class="contact-bar">
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
-        <div>
-          <div class="label">Calle 13A N° 3077 (Local 5)</div>
-          <div class="sub">Berazategui, Buenos Aires</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h2.2a1 1 0 0 1 1 .8l.8 3.6a1 1 0 0 1-.5 1.1l-1.7 1a13 13 0 0 0 6 6l1-1.7a1 1 0 0 1 1.1-.5l3.6.8a1 1 0 0 1 .8 1V19a2 2 0 0 1-2 2h-1C9.8 21 3 14.2 3 6V5z"/></svg>
-        <div>
+    <div class="footer-grid">
+      <div class="footer-info">
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h2.2a1 1 0 0 1 1 .8l.8 3.6a1 1 0 0 1-.5 1.1l-1.7 1a13 13 0 0 0 6 6l1-1.7a1 1 0 0 1 1.1-.5l3.6.8a1 1 0 0 1 .8 1V19a2 2 0 0 1-2 2h-1C9.8 21 3 14.2 3 6V5z"/></svg>
           <div class="label">11 2265 6236</div>
-          <div class="sub">WhatsApp / consultas</div>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <div class="label">bit.ly/tecnofenix</div>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <div>
+            <div class="label">Calle 13A N° 3077 (Local 5)</div>
+            <div class="sub">Berazategui, Buenos Aires</div>
+          </div>
+        </div>
+        <div class="f960-badge">
+          <a href="http://qr.afip.gob.ar/?qr=E0zoL3RRLjkt1AfJr60nqQ,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" alt="Dato Fiscal AFIP"></a>
         </div>
       </div>
-      <div class="contact-item">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-        <div>
-          <div class="label">bit.ly/tecnofenix</div>
-          <div class="sub">marianitro.github.io/tecnofenix</div>
-        </div>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps?q=Calle+13A+3077,+Berazategui,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación TecnoFénix en el mapa"></iframe>
       </div>
     </div>
     <div class="foot-bottom">
       <div>© TecnoFénix — Berazategui. No realizamos microelectrónica ni reparación de circuitos integrados.</div>
       <div class="tag">Más que reparaciones, soluciones.</div>
-    </div>
-    <div class="f960-row">
-      <a href="http://qr.afip.gob.ar/?qr=E0zoL3RRLjkt1AfJr60nqQ,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" alt="Dato Fiscal AFIP"></a>
     </div>
   </div>
 </footer>
