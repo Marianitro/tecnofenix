@@ -247,6 +247,20 @@
   .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:0.8rem;}
   .foot-bottom .tag{font-style:italic; color:var(--orange-light);}
 
+  .map-embed{
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--line);
+    margin-bottom:28px;
+  }
+  .map-embed iframe{width:100%; height:220px; border:0; display:block;}
+
+  .f960-row{
+    display:flex; justify-content:flex-end; align-items:center;
+    margin-top:16px; opacity:0.85;
+  }
+  .f960-row img{width:74px; height:auto; display:block;}
+
   @media (max-width:860px){
     nav{display:none;}
     .hero-inner{grid-template-columns:1fr;}
@@ -477,6 +491,9 @@
 
 <footer id="contacto">
   <div class="wrap">
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps?q=Calle+13A+3077,+Berazategui,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación TecnoFénix en el mapa"></iframe>
+    </div>
     <div class="contact-bar">
       <div class="contact-item">
         <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
@@ -503,6 +520,9 @@
     <div class="foot-bottom">
       <div>© TecnoFénix — Berazategui. No realizamos microelectrónica ni reparación de circuitos integrados.</div>
       <div class="tag">Más que reparaciones, soluciones.</div>
+    </div>
+    <div class="f960-row">
+      <a href="http://qr.afip.gob.ar/?qr=E0zoL3RRLjkt1AfJr60nqQ,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" alt="Dato Fiscal AFIP"></a>
     </div>
   </div>
 </footer>
